@@ -1,0 +1,56 @@
+@font-face{
+    font-family: Baskervile;
+    src: url(../../../Assets/Fonts/MontereyFLF.ttf);
+}
+.login .card{
+    width: 600px !important;
+    font-variant: small-caps !important;
+}
+
+@media screen and (max-width:991px){
+    .login .card{
+        width: auto !important;
+        max-width: 400px;
+    }
+}
+
+.login .card h3{
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em !important;
+}
+
+.login .card-body label {
+    color: royalblue !important;
+}
+
+.login form input {
+    border : none !important;
+    border-bottom: 2px solid #343A40 !important;
+    border-radius: 0px !important;
+}
+
+.login form input:focus{
+    box-shadow: none !important;
+}
+
+.login .input-group-append i {
+    cursor: pointer;
+    padding-top: 0.2em;
+}
+.login .input-group-append {
+    border-bottom: 2px solid #343A40;;
+}
+
+@media screen and (max-width: 450px){
+    .login button[type=submit], button[type=reset]{
+        width: 100%;
+        margin: 0 !important;
+        margin-top: 1em !important;
+        display: block;
+    }
+}
+
+.login h3{
+    font-family: Brand !important;
+}

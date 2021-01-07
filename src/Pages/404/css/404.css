@@ -1,0 +1,16 @@
+html, body{
+    height: 100% !important;
+}
+.Error{
+    font-family: Brand !important;
+    font-size: 20vw !important;
+    color: white !important;
+}
+.not-found{
+    font-size: 4vw !important;
+    font-family: Logo !important;
+}
+.error-page{
+    height: 100% !important;
+    width:  100% !important;
+}

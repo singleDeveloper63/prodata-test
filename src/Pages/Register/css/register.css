@@ -1,0 +1,127 @@
+
+.registerCard{
+   width: 600px;
+   background-color: rgba(255,255,255,0.7) !important;
+   font-variant-caps: petite-caps;
+   margin-top: 1vh;
+}
+
+
+@media screen and (max-width:650px){
+    .registerCard{
+        width: auto;
+
+    }
+}
+
+.registerCard input.form-control{
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0;
+}
+
+.registerCard input.form-control:valid{
+    background: transparent !important;
+    color: #343A40;
+    border-bottom: 3px solid #343A40 !important;
+}
+
+.registerCard input:focus{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.registerCard input:invalid{
+    color: red !important;
+    border-bottom: 2px solid red !important;
+}
+
+.registerCard button[type=submit]{
+    border: 2px solid #343A40 !important;
+    color: white;
+    background-color: #343A40 !important;
+    width: 40% !important;
+}
+
+.registerCard button[type=submit]:hover{
+    background-color: #343A40 !important;
+    color: white;
+}
+
+.registerCard button[type=submit]:active{
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+}
+
+.registerCard button[type=reset]{
+    background-color: white;
+    color: #343A40;
+    width: 40% !important;
+    border: 2px solid #343A40;
+}
+
+.registerCard button[type=reset]:hover{
+    background-color: rgb(182, 241, 205) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.registerCard button[type=password]:focus{
+    border: 2px solid transparent !important;
+}
+
+
+.registerCard button[type=reset]:active{
+    background-color: rgba(6, 6, 216, 0.5) !important;
+    outline:  none !important;
+    box-shadow: none !important;
+    border: none !important;
+    color: white !important;
+}
+
+
+
+@media screen and (max-width:450px){
+    .registerCard button[type=submit],button[type=reset]{
+        
+        width: 100% !important;
+        font-size: 13px !important;
+    }
+}
+
+@media screen and (min-width:450px){
+    .img-logo{
+        width: 300px !important;
+    }
+}
+.registerCard label{
+    color: royalblue !important;
+}
+
+.registerCard input:valid + div.input-group-append{
+    border-bottom: 3px solid #343A40;
+  
+}
+
+.registerCard .input-group-append {
+    border-bottom: 2px solid red;
+    color: #343A40;
+    cursor: pointer;
+    padding-top: 0.7em;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
+
+@media screen and (max-width:450px){
+    .registerCard button{
+        font-size: 10px;
+    }
+    .img-logo{
+        width: auto !important;
+    }
+}

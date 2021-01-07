@@ -1,0 +1,189 @@
+@font-face{
+    font-family: Custom;
+    src: url(../../Assets/Fonts/Quick.ttf);
+}
+
+@font-face{
+    font-family: Headers;
+    src: url(../../Assets/Fonts/MontereyFLF.ttf);
+}
+.sidenav{
+    float: left ;
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+    top:0px !important;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.6) !important;
+    background : black !important;
+    font-family: Custom !important;
+}
+
+.sidenav button.sidenav-toggle{
+    position: absolute !important;
+    top: 10px !important;
+    left: 250px !important;
+    font-size: 2em !important;
+    border: transparent !important;
+    background: transparent !important;
+    text-shadow: 0 0 2px black !important;
+    z-index: 9999 !important;
+
+}
+
+.visible{
+    position: fixed;
+    width: 200% !important;
+    height: 100% !important;
+    background-color: rgba(0,0,0,0.5) !important;
+    z-index: 99;
+    animation: slideIn 0.7s;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(-302px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.sidenav-toggle{
+    position: fixed !important;
+    background-color: rgba(20, 20, 20, 0.925);
+    color: white;
+    width: 40px !important;
+    height: 40px !important;
+    border: 1px solid grey;
+    border-radius: 100px !important;
+    transition: 0.5s;
+}
+
+.sidenav-toggle:focus{
+    outline: none !important;
+
+}
+
+.sidenav-toggle:hover{
+    background : rgb(48, 49, 48) !important;
+}
+@media screen and (max-width:1300px){
+    
+}
+.sidenav {
+    left: -302px !important;
+    top : 0px !important;
+    z-index: 9999;
+}
+
+.visible{
+    position: fixed;
+    left : 0px !important;
+    width: 200% !important;
+    background-color: rgba(0,0,0,0.3);
+}
+.sidenav-toggle {
+    position: fixed !important;
+    top: 100px !important;
+    left: -20px !important;
+    z-index: 99 !important;
+}
+.sidenav .nav-pills{
+    height: 100% !important;
+}
+.sidenav ul.nav-pills{
+    width: 300px !important;
+    overflow: hidden !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background : rgb(5, 15, 1) !important;
+
+}
+
+.sidenav ul.nav-pills li {
+    display: block !important;
+    width: 100% !important;
+}
+.sidenav ul.nav-pills li::after{
+    content: '';
+    position: absolute !important;
+    width: 280px !important;
+    background-color: lightgray !important;
+    height: 1px !important;
+    left: 10px !important;
+}
+
+
+
+.sidenav ul.nav-pills li a{
+    color: white !important;
+}
+
+.sidenav ul.nav-pills li a:hover{
+    border: none !important;
+
+}
+.sidenav ul.nav-pills li > a.active{
+    border-radius: 0px !important;
+    border: none !important;
+    font-weight: bolder;
+    padding-left: 1.3em !important;
+    background-image: linear-gradient(147deg, #393a39 0%, #000000 74%);
+    border-left: 5px solid rgb(71, 73, 71) !important;
+}
+.sidenav ul.nav-pills li.sidenav-header{
+    background-image: url(../../Assets/backgrounds/12.jpg) !important;
+    background-color: white !important;
+    background-size: 100% 42% !important;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    height: 200px !important;
+    padding: 2em !important;
+    position: relative !important;
+}
+
+.sidenav ul.nav-pills li.sidenav-header h3{
+    color: royalblue !important;
+    font-family: Headers !important;
+    margin-bottom: 0px !important;
+    font-size: 1.5em;
+    margin-top: 0.3em;
+}
+.sidenav ul.nav-pills li.sidenav-header span {
+    color: orangered !important;
+    font-size: 0.8em;
+}
+
+.sidenav ul.nav-pills li.sidenav-header span:not(:last-child)::after{
+    content: '/';
+}
+.sidenav ul.nav-pills li.sidenav-header::after{
+    content: '';
+    width: 0px !important;
+}
+.sidenav ul.nav-pills .sidenav-user>img{
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 100px !important;
+    object-fit: cover;
+    margin-top: 1rem !important;
+}
+
+.marginButton{
+    left: 300px !important;
+    z-index: 9999;
+}
+
+.hide{
+    animation : hide 0.5s;
+}
+
+
+@keyframes hide{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-302px);
+    }
+}

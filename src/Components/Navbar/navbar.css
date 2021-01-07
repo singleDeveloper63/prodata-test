@@ -1,0 +1,262 @@
+@font-face{
+    font-family: Brand;
+    src: url(../../Assets/Fonts/Roboto-Black.ttf);
+}
+
+@font-face{
+    font-family: Logo;
+    src: url(../../Assets/Fonts/LibreBaskerville-Bold.otf);
+}
+.navbar-brand span{
+    font-family: Logo !important;
+}
+.navbar{
+    position:fixed;
+    top: 0;
+    transition: all 0.7s !important;
+    width: 100% !important;
+    margin-top: 0px !important;    
+    background: rgb(45, 12, 105);
+}
+.navbar .navbar-brand>span{
+    font-size: 30px !important;
+    margin-left: 1vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: bottom;
+}
+
+
+.navbar .nav-item{
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    font-size: 18px !important;
+    font-family: Brand  !important;
+    transition: 0.4s;
+    margin : 0 !important;
+    padding: 0 !important;
+}
+.navbar .nav-item span.dropdown-toggle{
+    color: rgb(146, 146, 146) !important;
+    font-family: Brand !important;
+}
+@media screen and (max-width: 991px){
+    .nav-item{
+        width: 100%;
+        border-bottom: 1px solid rgb(41, 46, 41)
+    }
+    .nav-item button{
+        width: 100% !important;
+        display: block !important;
+    }
+    .nav.navbar-nav{
+        padding-top: 10rem;
+    }
+    #mainMenu{
+        border-top: 2px solid rgb(41, 41, 41);
+        margin-top: 1rem;
+    }
+    
+}
+
+.dropdown img{
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: fill;
+}
+
+.dropdown-toggle::after{
+    display: none !important;
+}
+.dropdown{
+    cursor: pointer;
+    float: right;
+}
+
+.dropdown .dropdown-menu{
+    padding: 0 !important;
+    z-index: 9999;
+    overflow:  hidden !important;
+}
+
+.dropdown .dropdown-item{
+    transition:0.4s;
+    border-bottom: 1px solid rgb(52, 58, 64);
+    color: #343A40;
+    font-family: Brand !important;
+}
+
+.dropdown .dropdown-item:first-child{
+    margin-top: 10px !important;
+    border-top: 1px solid rgb(52, 58, 64) !important;
+}
+.dropdown .dropdown-item:last-child{
+    margin-bottom: 10px !important;
+}
+
+.dropdown .dropdown-item:hover{
+    background-color: rgb(52, 58, 64) !important;
+    color: white !important;
+}
+
+.dropdown .dropdown-toggle{
+    text-decoration: none !important;
+    color:lightgray !important;
+    font-family: Brand !important;
+}
+
+.dropdown-toggle:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width:283px){
+    .navbar-brand{
+        display: none !important;
+    }
+}
+.dropdown-menu .input[type=search]{
+    border-bottom: 2px solid rgb(88, 88, 88) !important;
+    width: auto !important;
+}
+
+.searchBar input[type=search]{
+    border: 1px solid rgb(200, 200, 200);
+    padding: 0.5em 3em;
+    border-radius: 100px !important;
+    background-image: url(../../Assets/Icons/search.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 5px 3px;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    padding-right: 10px;
+    font-family: monospace;
+    box-shadow: 0 0 6px rgba(0,0,0,0.7) !important;
+    height: 42px !important;
+    margin-top: 1px !important;
+    transition: background 0.6s;
+    
+}
+.searchBar input[type=search]:focus{
+    outline: none !important;
+}
+
+.searchBar button{
+    border-radius: 100px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    background: rgb(15, 41, 156) !important;
+    height: 45px !important;
+}
+
+.searchBar{
+    overflow: hidden;
+    min-width: 300px !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    background: rgb(45, 12, 105) !important;
+    animation: slideIn 0.3s 1;
+}
+
+.searchBar span{
+    font-family: post;
+}
+@keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100% {
+      transform:translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  .navbar-toggler{
+      border: none !important;
+      transition: 0.3s !important;
+      animation:bakcAnim 0.5s infinite !important;
+  }
+  .navbar-toggler:active{
+    background-color: rgba(68, 84, 121, 0.692) !important;
+    border-radius: 100px !important;
+  }
+  .navbar-toggler:focus{
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+  }
+
+  .user-menu{
+      padding: 0 !important;
+  }
+  .user-menu:hover{
+      border: 1px solid lightgray !important;
+      border-radius: 100px !important;
+  }
+  .user-menu>button{
+      background-color: transparent !important;
+      border: none !important;
+      padding: 5px !important;
+      transition:border 0.3s !important;
+  }
+  .user-menu>button:focus{
+      border:none !important;
+      outline: none !important;
+  }
+  .btn-auth{
+      border-radius: 100px !important;
+      transition: all 0.3s !important;
+      font-family:  Brand !important;
+  }
+  
+  .btn-auth:hover{
+      border: 1px solid white !important;
+  }
+
+  
+.backToTop{
+    position: fixed !important;
+    z-index: 9999;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 100px !important;
+    right: 20px ;
+    bottom: 50px ;
+    font-size: 1.5em !important;
+    border: none !important;
+    color: white !important;
+    text-align: center !important;
+    transition: opacity  1s , bottom 0.4s ;
+    padding-top: 10px !important;
+    background: linear-gradient(315deg, #9125c3, #110f88);
+    background-size: 200% 250%;
+    animation: AnimationName 1s ease infinite;
+}
+
+.backToTop:hover{
+    border: 3px solid blue !important;
+    color: blue !important;
+    background: white !important;
+}
+
+
+@keyframes AnimationName {
+    0%{
+        background-position:0% 54%;
+        transform: scale(1.1);
+    }
+    50%{
+        background-position:100% 47%;
+        transform: scale(0.8);
+    }
+    100%{
+        background-position:0% 54%;
+        transform: scale(1.1);
+    }
+}

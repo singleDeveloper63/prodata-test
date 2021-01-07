@@ -1,0 +1,66 @@
+
+.footer-content{
+    background:#050A35;
+    z-index: 10;
+}
+
+.footer-content h2{
+    color: lightslategray;
+    text-align: center;;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.footer-content p{
+    text-align: center;
+    font-size: 1;
+    line-height: 1.8;
+    font-variant-caps: petite-caps;
+    color: gray;
+}
+.author{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(255,255,255,0.6);
+}
+.avatar{
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100);
+    cursor: pointer;
+    shape-outside: circle();
+
+}
+.avatar:hover{
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+}
+
+.footer-copyright{
+    background-color: rgb(11, 8, 26);
+    color: white;
+    font-weight: bolder;
+}
+
+.useful-links .nav-link{
+    color: white !important;
+    transition: 0.4s !important;
+}
+.useful-links .nav-link:hover{
+    text-decoration: underline !important;
+}
+.contact-form label{
+    color: lightgrey !important;
+    font-size: 15px !important;
+    font-family: Light !important;
+}
+
+.contact-form button i{
+    margin-right: 10px !important;
+}
+.contact-form button, textarea,input{
+    border-radius: 0px !important;
+}
+
+
+                            
